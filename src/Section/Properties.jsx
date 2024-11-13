@@ -31,24 +31,24 @@ const Properties = () => {
         {/* Properties grid starts here */}
         <div id='grid-box' className='w-full grid lg:grid-cols-3 grid-cols-1 justify-center items-center gap-8'>
           {property.map((item, index) => (
-            <div data-aos='zoom-in' data-aos-delay='200' key={index} className='bg-white dark:bg-gray-800 rounded-xl w-full'>
+            <div data-aos='zoom-in' data-aos-delay='200' key={index} className='bg-white dark:bg-gray-800 rounded-xl w-full shadow-lg'>
               <div 
                 id='image-box' 
-                className='bg-cover bg-center h-[250px] rounded-xl p-4 flex flex-col justify-between' 
+                className='bg-cover bg-center h-[250px] rounded-xl p-4 flex flex-col justify-between relative' 
                 style={{ backgroundImage: `url(${item.images})` }}
               >
                 <div id='top' className='flex justify-between items-center w-full'>
-                  <button className='px-3 py-1 bg-red-600 hover:bg-white hover:text-black text-white rounded-full text-[13px]'>Featured</button>
-                  <div className='flex gap-3'>
-                    <button className='px-3 py-1 bg-red-600 hover:bg-white hover:text-black text-white rounded-full text-[13px]'>Sales</button>
-                    <button className='px-3 py-1 bg-red-600 hover:bg-white hover:text-black text-white rounded-full text-[13px]'>Active</button>
+                  <button className='px-3 py-1 bg-red-600 text-white rounded-full text-xs font-semibold'>Featured</button>
+                  <div className='flex gap-2'>
+                    <button className='px-3 py-1 bg-red-600 text-white rounded-full text-xs font-semibold'>Sales</button>
+                    <button className='px-3 py-1 bg-red-600 text-white rounded-full text-xs font-semibold'>Active</button>
                   </div>
                 </div>
 
                 <div id='bottom' className='flex justify-between items-center w-full mt-auto'>
                   <div className='flex items-center gap-2'>
                     <FaMapMarkerAlt className='text-white' />
-                    <span className='text-white'>{item.address}</span>
+                    <span className='text-white text-sm'>{item.address}</span>
                   </div>
                   <div className='flex items-center gap-2'>
                     <button className='p-2 bg-transparent text-white rounded-full'>
@@ -62,22 +62,22 @@ const Properties = () => {
               </div>
 
               <div className='px-6 py-3 flex flex-col justify-center items-start gap-2 w-full'>
-                <h1 className='text-xl text-black font-semibold dark:text-white'>{item.name}</h1>
-                <h1 className='text-2xl text-red-600 font-bold dark:text-white'>{item.price}</h1>
-                <p className='dark:text-white'>{item.about}</p>
+                <h1 className='text-xl font-bold dark:text-white'>{item.name}</h1>
+                <h1 className='text-2xl text-red-600 font-bold'>{item.price}</h1>
+                <p className='text-sm text-gray-700 dark:text-gray-300'>{item.about}</p>
                 
                 <div id='icons' className='flex justify-start items-center gap-4 mt-4'>
                   <div className='flex justify-center items-center gap-2'>
                     <FaBath className='text-xl text-red-400' />
-                    <h1 className='dark:text-white'>{item.bath}</h1>
+                    <h1 className='dark:text-white text-sm'>{item.bath}</h1>
                   </div>
                   <div className='flex justify-center items-center gap-2'>
                     <FaBed className='text-xl text-red-400' />
-                    <h1 className='dark:text-white'>{item.bed}</h1>
+                    <h1 className='dark:text-white text-sm'>{item.bed}</h1>
                   </div>
                   <div className='flex justify-center items-center gap-2'>
                     <MdSpaceDashboard className='text-xl text-red-400' />
-                    <h1 className='dark:text-white'>{item.area}</h1>
+                    <h1 className='dark:text-white text-sm'>{item.area}</h1>
                   </div>
                 </div>
 
@@ -85,17 +85,17 @@ const Properties = () => {
 
                 <div id='owner-info' className='flex items-center gap-2 w-full mt-4'>
                   <FaUserCircle className='text-2xl text-red-400' />
-                  <h1 className='dark:text-white'>{item.owner}</h1>
+                  <h1 className='dark:text-white font-medium'>{item.owner}</h1>
                 </div>
 
                 <div className='flex justify-center items-center gap-4 mt-4'>
-                  <div className='p-2 border-2 border-gray-200 hover:bg-black cursor-pointer transform hover:scale-110 transition-transform duration-300'>
+                  <div className='p-2 border-2 border-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700 rounded-full cursor-pointer transform hover:scale-110 transition-transform duration-300'>
                     <FaShareAlt className='text-xl text-red-400' />
                   </div>
-                  <div className='p-2 border-2 border-gray-200 hover:bg-black cursor-pointer transform hover:scale-110 transition-transform duration-300'>
+                  <div className='p-2 border-2 border-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700 rounded-full cursor-pointer transform hover:scale-110 transition-transform duration-300'>
                     <FaHardHat className='text-xl text-red-400' />
                   </div>
-                  <div className='p-2 border-2 border-gray-200 hover:bg-black cursor-pointer transform hover:scale-110 transition-transform duration-300'>
+                  <div className='p-2 border-2 border-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700 rounded-full cursor-pointer transform hover:scale-110 transition-transform duration-300'>
                     <FaPlus className='text-xl text-red-400' />
                   </div>
                 </div>
