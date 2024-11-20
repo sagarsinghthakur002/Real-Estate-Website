@@ -28,7 +28,8 @@ const Properties = () => {
           <h1 data-aos="zoom-in" className='text-black text-4xl font-semibold dark:text-white'>Explore the latest</h1>
         </div>
 
-        {/* Properties grid starts here */}
+        {/* Properties grid starts here */} hover:bg-white hover:text-black
+
         <div id='grid-box' className='w-full grid lg:grid-cols-3 grid-cols-1 justify-center items-center gap-8'>
           {property.map((item, index) => (
             <div data-aos='zoom-in' data-aos-delay='200' key={index} className='bg-white dark:bg-gray-800 rounded-xl w-full shadow-lg'>
@@ -38,10 +39,10 @@ const Properties = () => {
                 style={{ backgroundImage: `url(${item.images})` }}
               >
                 <div id='top' className='flex justify-between items-center w-full'>
-                  <button className='px-3 py-1 bg-red-600 text-white rounded-full text-xs font-semibold'>Featured</button>
+                  <button className='px-3 py-1 bg-red-600 text-white hover:bg-white hover:text-black rounded-full text-xs font-semibold'>Featured</button>
                   <div className='flex gap-2'>
-                    <button className='px-3 py-1 bg-red-600 text-white rounded-full text-xs font-semibold'>Sales</button>
-                    <button className='px-3 py-1 bg-red-600 text-white rounded-full text-xs font-semibold'>Active</button>
+                    <button className='px-3 py-1 bg-red-600 text-white hover:bg-white hover:text-black rounded-full text-xs font-semibold'>Sales</button>
+                    <button className='px-3 py-1 bg-red-600 text-white hover:bg-white hover:text-black rounded-full text-xs font-semibold'>Active</button>
                   </div>
                 </div>
 

@@ -23,11 +23,11 @@ const Popural = () => {
       <section
         className={`${
           darkMode ? "dark bg-black" : "light bg-transparent"
-        } lg:w-[90%] w-full h-fit m-auto bg-cover bg-center rounded-xl flex justify-center flex-col items-center lg:px-20 px-6 py-20 gap-20  bg-red-200`}
+        } lg:w-[90%] w-full h-fit m-auto bg-cover bg-center rounded-xl flex justify-center flex-col items-center  bg-red-200 lg:px-20 px-6 py-20 gap-20 `}
       >
         <div
           id="top"
-          className="w-full grid lg:grid-cols-3 grid-cols-1 justify-center items-center gap-8"
+          className="w-full grid lg:grid-cols-3 grid-cols-1 justify-center items-center gap-8 "
         >
           <div>
             <h1 data-aos="zoom-in" className="text-red-500 dark:text-white">

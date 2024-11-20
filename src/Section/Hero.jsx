@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDarkMode } from '../components/DarkModeContext';
-import heroimg from '../assets/images/hero1.webp';
+import heroimg from '../assets/images/hero1.jpg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
