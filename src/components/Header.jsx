@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   const navItems = [
-    { label: 'Home', path: 'home' },
+    { label: 'Home', path: 'hero' },
     { label: 'About', path: 'about' },
     { label: 'Properties', path: 'properties' },
     { label: 'Services', path: 'services' },
@@ -28,15 +28,15 @@ const Header = () => {
   return (
     <nav
       className={`${
-        darkMode ? 'dark bg-black' : 'light bg-[#f3f3f3]'
-      } flex justify-between items-center gap-4 lg:px-20 px-4 py-3 sticky top-0 z-30`}
+        darkMode ? 'dark bg-black' : 'light bg-[#f3f3f3] '
+      } flex justify-between items-center gap-4 lg:px-20 px-4 py-3 sticky top-0 z-30 "backdrop-sepia-0 `}
     >
       {/* Logo */}
       <div id="logo">
         <img
           src={logo}
           alt="company logo"
-          className="lg:w-[150px] w-[120px] dark:invert"
+          className="lg:w-[150px] w-[120px] dark:inver text-red-500"
         />
       </div>
 

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDarkMode } from '../components/DarkModeContext';
-import heroimg from '../assets/images/hero1.jpg';
+import heroimg from '../assets/images/hero1.webp';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -24,10 +24,10 @@ const Hero = () => {
                 className="w-[95%] h-[600px] m-auto bg-cover bg-center rounded-xl flex justify-center flex-col items-start lg:px-28 px-10 gap-7 z-20"
                 style={{ backgroundImage: `url(${heroimg})` }}
             >
-                <h1 data-aos="zoom-in" className="text-6xl text-white font-semibold lg:pr-[500px] pr-0 lg:leading-[70px] leading-[60px]">
+                <h1 data-aos="zoom-in" className="lg:text-6xl text-[40px] text-white font-semibold lg:pr-[500px] pr-0 lg:leading-[70px] leading-[45px]">
                     Find your next home in Las Vegas
                 </h1>
-                <p data-aos="zoom-in" className="text-white text-xl lg:pr-[500px] pr-0">
+                <p data-aos="zoom-in" className="text-white lg:text-xl text-[15px] lg:pr-[500px] pr-0">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repellendus nisi ipsum illum, fugit perferendis magnam aspernatur ab deleniti, magni, adipisci molestiae porro? Placeat, at. Fugit, cumque facere! Porro, repudiandae.
                 </p>
             </section>

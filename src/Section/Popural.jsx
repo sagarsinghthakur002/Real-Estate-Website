@@ -22,15 +22,15 @@ const Popural = () => {
     <div className={`${darkMode ? "dark bg-black" : "light bg-transparent"}`}>
       <section
         className={`${
-          darkMode ? "dark bg-black" : "light bg-transparent"
-        } lg:w-[90%] w-full h-fit m-auto bg-cover bg-center rounded-xl flex justify-center flex-col items-center  bg-red-200 lg:px-20 px-6 py-20 gap-20 `}
+          darkMode ? "dark bg-gray-800" : "light bg-red-100"
+        } lg:w-[90%] w-full h-fit m-auto bg-cover bg-center rounded-xl flex justify-center flex-col items-center  lg:px-20 px-6 py-20 gap-20 `}
       >
         <div
           id="top"
           className="w-full grid lg:grid-cols-3 grid-cols-1 justify-center items-center gap-8 "
         >
           <div>
-            <h1 data-aos="zoom-in" className="text-red-500 dark:text-white">
+            <h1 data-aos="zoom-in" className="text-red-500 dark:text-white font-bold ">
               POPULAR AREAS
             </h1>
             <h1
@@ -63,7 +63,7 @@ const Popural = () => {
         </div>
         <div
           id="bottom"
-          className="w-full grid lg:grid-cols-3 grid-cols-1 lg:justify-center justify-start items-center gap-6 "
+          className="w-full grid lg:grid-cols-3 grid-cols-1  lg:justify-center justify-start items-center gap-6 "
         >
           <div
             data-aos="slide-up"
@@ -73,7 +73,7 @@ const Popural = () => {
             <h1 className="text-black text-7xl font-semibold dark:text-white">
               5K
             </h1>
-            <h1>
+            <h1 className=" dark:text-white">
               Active <br /> LISTINGS
             </h1>
           </div>
@@ -85,7 +85,7 @@ const Popural = () => {
             <h1 className="text-black text-7xl font-semibold dark:text-white">
               5K
             </h1>
-            <h1>
+            <h1 className=" dark:text-white" >
               Active <br /> LISTINGS
             </h1>
           </div>
@@ -97,7 +97,7 @@ const Popural = () => {
             <h1 className="text-black text-7xl font-semibold dark:text-white">
               5K
             </h1>
-            <h1>
+            <h1 className=" dark:text-white">
               Active <br /> LISTINGS
             </h1>
           </div>

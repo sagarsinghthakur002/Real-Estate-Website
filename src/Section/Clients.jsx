@@ -15,6 +15,20 @@ const Clients = () => {
     });
   }, []);
 
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    cssEase: "ease-in-out",
+    pauseOnHover: false,
+    pauseOnFocus: true,
+  };
+
   const { darkMode } = useDarkMode();
 
   return (
@@ -24,11 +38,11 @@ const Clients = () => {
         className="lg:w-[95%] w-full h-fit m-auto bg-cover bg-center rounded-xl justify-center items-start lg:px-20 px-6 py-20 gap-y-20"
       >
         <div className="flex flex-col justify-center items-start gap-4">
-          <h1 data-aos="zoom-in" className="text-red-500 dark:text-white">
+          <h1 data-aos="zoom-in" className="text-red-500 dark:text-white font-bold">
             Our Clients
           </h1>
-          <h1 className="text-black dark:text-white text-[40px] font-semibold leading-10">
-            What our Clients <br /> are saying about us
+          <h1 className="text-black dark:text-white text-[40px] font-semibold leading-10 pb-3">
+            What our Clients are saying about us
           </h1>
         </div>
 

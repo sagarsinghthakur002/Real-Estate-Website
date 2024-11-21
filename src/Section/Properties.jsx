@@ -28,7 +28,7 @@ const Properties = () => {
           <h1 data-aos="zoom-in" className='text-black text-4xl font-semibold dark:text-white'>Explore the latest</h1>
         </div>
 
-        {/* Properties grid starts here */} hover:bg-white hover:text-black
+        {/* Properties grid starts here */}
 
         <div id='grid-box' className='w-full grid lg:grid-cols-3 grid-cols-1 justify-center items-center gap-8'>
           {property.map((item, index) => (

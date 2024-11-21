@@ -35,7 +35,7 @@ const About = () => {
         <h1
           data-aos="zoom-in"
           data-aos-delay="200"
-          className='text-black text-[40px] font-semibold leading-10 dark:text-white'
+          className='text-black lg:text-[40px] text-[20px] font-semibold leading-10 dark:text-white'
         >
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, eligendi expedita provident magni quo reprehenderit modi voluptatibus tempora vel inventore.
         </h1>

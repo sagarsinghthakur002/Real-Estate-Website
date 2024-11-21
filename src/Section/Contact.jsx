@@ -71,7 +71,7 @@ const Contact = () => {
           <h1
             data-aos="zoom-in"
             data-aos-delay="200"
-            className="text-red-500 dark:text-white"
+            className="text-red-500 dark:text-white font-semibold"
           >
             REACH US
           </h1>
@@ -83,9 +83,9 @@ const Contact = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, a?
           </h1>
           <button
-            className="bg-red-600 w-full text-md px-8 py-3 text-white font-semibold rounded-xl hover:bg-black dark:hover:bg-red-700 cursor-pointer"
+            className="bg-red-600  text-md px-8 py-3 text-white font-semibold rounded-xl hover:bg-black dark:hover:bg-red-700 cursor-pointer"
           >
-            SEND EMAIL
+            Contact
           </button>
         </div>
       </section>
