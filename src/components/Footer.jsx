@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
           </div>
           <h1 className="text-white mt-8">
-            Copyright Real Estate, All rights Reserved
+          Copyright &copy; Sagar Thakur. All Rights Reserved.
           </h1>
         </div>
 
